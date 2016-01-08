@@ -1,0 +1,20 @@
+extend ../layout
+
+block content
+  h1 Sign Up
+  hr
+
+  form(method="POST")
+    .form-group
+      label Username
+      input.form-control(type="text" name="username" class="form-control")
+
+    .form-group
+      label Password
+      input.form-control(type="password" name="password" class="form-control")
+
+    .form-group
+      button.btn.btn-primary(type="submit") Sign Up
+
+    .form-group
+      a(href="/") Login

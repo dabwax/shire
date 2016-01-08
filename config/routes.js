@@ -6,5 +6,6 @@
 // Guide on [routing](http://locomotivejs.org/guide/routing.html) for additional
 // information.
 module.exports = function routes() {
-  this.root('pages#main');
+  this.root('auth#sign_in');
+  this.match('/sign-up', 'auth#sign_up');
 }
