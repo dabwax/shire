@@ -1,7 +1,22 @@
 doctype html
 html
   head
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    // Bootstrap v4.0.0-alpha
+    link(rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css")
   body
-    block content
+
+    .container
+        block content
+    
+    // jQuery v2.1.4
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+
+    // Angular v1.4.8
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js")
+
+    // Bootstrap v4.0.0-alpha
+    script(src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js")

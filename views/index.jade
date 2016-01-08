@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  div.jumbotron
+    h1 Shire App
+    p Welcome! Login or register, please.
+
+  form(action="/sign-in")
+    .form-group
+      label Username/E-mail
+      input.form-control(name="username")
+
+    .form-group
+      label Password
+      input.form-control(name="password" type="password")
+
+    .form-group
+    .row
+      .col-xs-6
+        button.btn.btn-success-outline.btn-block(type="submit") Sign In
+      .col-xs-6
+        a.btn.btn-primary-outline.btn-xs.btn-block(href="/sign-up") Sign Up

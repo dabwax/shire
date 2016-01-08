@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+  h1 Sign Up
+  hr
+
+  form(action="/sign-up" method="POST")
+    .form-group
+      label Username/E-mail
+      input.form-control(name="username")
+
+    .form-group
+      label Password
+      input.form-control(name="password" type="password")
+
+    .form-group
+    .row
+      .col-xs-12
+        button.btn.btn-primary-outline.btn-xs.btn-block(type="submit") Sign Up
